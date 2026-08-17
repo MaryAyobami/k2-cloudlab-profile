@@ -2,6 +2,7 @@
 
 import geni.portal as portal
 import geni.rspec.igext as IG
+import geni.rspec.emulab 
 
 AUTHOR_DUT = "urn:publicid:IDN+utah.cloudlab.us+image+heartbeat-PG0:xl170-centos7-ubuntu20:2"
 AUTHOR_GEN = "urn:publicid:IDN+utah.cloudlab.us+image+heartbeat-PG0:xl170-centos7-ubuntu20.node-1:5"
@@ -54,7 +55,7 @@ iface1 = node1.addInterface("interface-1")
 link = request.Link("link-0", members=[iface0, iface1])
 link.bandwidth = LINK_BANDWIDTH
 if params.same_switch:
-    link.setNoInterSwitchLink()
+    link.setNoInterSwitchLinks()
 
 tour = IG.Tour()
 tour.Description(IG.Tour.MARKDOWN,
