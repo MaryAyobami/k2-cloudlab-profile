@@ -10,7 +10,7 @@ STOCK_DUT = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD"
 STOCK_GEN = "urn:publicid:IDN+emulab.net+image+emulab-ops//CENTOS7-64-STD"
 STOCK_NEW = "urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU22-64-STD"
 
-NODES = ["xl170", "c6525-25g", "sm110p", "r6615", "d7615", "c6525-100g", "c6620", "d760p"]
+NODES = ["xl170", "c6525-25g", "sm110p", "r6615", "d7615", "c6525-100g", "c6620", "d760p", "d760-hbm"]
 
 IMAGES = [("authors", "Authors' xl170 snapshots"),
           ("stock", "Stock Ubuntu 20.04 + CentOS 7"),
